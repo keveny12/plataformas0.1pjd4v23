@@ -13,6 +13,10 @@ public class Player : MonoBehaviour
     private Vector2 _moveInput;
     private bool _isatirando;
 
+    private int _points;
+    private int _currentEnergy;
+    [SerializeField] private int maxEnergy;
+
     private void OnEnable()
     {
         _playerInput.onActionTriggered += OnAction;
@@ -49,6 +53,13 @@ public class Player : MonoBehaviour
         {
             _moveInput = playerAct.ReadValue<Vector2>();
         }
+    }
+
+    private void Addpoints(int amount)
+    {
+       
+
+
     }
     
 }
