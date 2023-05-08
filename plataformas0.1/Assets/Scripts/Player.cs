@@ -17,6 +17,24 @@ public class Player : MonoBehaviour
     private int _currentEnergy;
     [SerializeField] private int maxEnergy;
 
+    public Rigidbody2D oRigidbody2D;
+    //para mover o rigidbody
+
+    public GameObject tiroNormal;
+    
+    public Transform localDoTiroNormal;
+    
+    
+    public float velocidadeDoJogador;
+
+    public bool temTiroDuplo;
+
+    private Vector2 teclasApertadas;
+   //move os dois eixos
+   
+   
+   
+
     private void OnEnable()
     {
         _playerInput.onActionTriggered += OnAction;
@@ -61,5 +79,27 @@ public class Player : MonoBehaviour
 
 
     }
-    
+
+    void Update()
+    {
+        MovimentoJogador();
+    }
+
+    private void MovimentoJogador()
+    {
+        teclasApertadas = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        oRigidbody2D.velocity = teclasApertadas.normalized * velocidadeDoJogador;
+    }
+
+    private void DispararTiro()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if (temTiroDuplo == false)
+            {
+                
+            }
+        }
+        
+    }
 }

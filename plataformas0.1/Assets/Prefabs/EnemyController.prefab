@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4612355070559358332}
   - component: {fileID: 450569514534922482}
   - component: {fileID: 5128460447157277806}
+  - component: {fileID: 6909117728365309929}
   m_Layer: 0
   m_Name: EnemyController
   m_TagString: Untagged
@@ -72,6 +73,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac20ce6cfd762eb48aee483f7a59a115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
+  mySprite: {fileID: 0}
+  changeDirectionTime: 2
+--- !u!95 &6909117728365309929
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402985835426575697}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 467c20e1e32b6914c9da6ed584db75ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6828852693325654154
 GameObject:
   m_ObjectHideFlags: 0
