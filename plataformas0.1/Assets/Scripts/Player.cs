@@ -21,21 +21,27 @@ public class Player : MonoBehaviour
     //para mover o rigidbody
 
     public GameObject tiroNormal;
+
+    public KeyCode botãoTiro = KeyCode.Space;//chama o botao para atirar segurando o botao
+    public float tempoDoTiro = 0.5f;
+    private float ProximoTiro = 0.0f;
     
-    public Transform localDoTiroNormal;
+    public Transform localDoTiroNormal;//aonde o tiro sai
     
     
     public float velocidadeDoJogador;
 
     public bool temTiroDuplo;
 
-    private Vector2 teclasApertadas;
-   //move os dois eixos
-   
-   
-   
+    private Vector2 teclasApertadas;//move os dois eixos
 
-    private void OnEnable()
+
+   private void Start()
+   {
+       temTiroDuplo = false;
+   }
+
+   private void OnEnable()
     {
         _playerInput.onActionTriggered += OnAction;
     }
@@ -83,6 +89,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         MovimentoJogador();
+        DispararTiro();
     }
 
     private void MovimentoJogador()
@@ -93,11 +100,12 @@ public class Player : MonoBehaviour
 
     private void DispararTiro()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKey(botãoTiro) && Time.time > ProximoTiro)
         {
+            ProximoTiro = Time.time + tempoDoTiro;
             if (temTiroDuplo == false)
             {
-                
+                Instantiate(tiroNormal, localDoTiroNormal.position, localDoTiroNormal.rotation);
             }
         }
         
