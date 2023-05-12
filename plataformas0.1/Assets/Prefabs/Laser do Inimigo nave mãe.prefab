@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VelocidadeDoTiro: 8
+  danoParaDar: 3
 --- !u!114 &2221833571916117268
 MonoBehaviour:
   m_ObjectHideFlags: 0

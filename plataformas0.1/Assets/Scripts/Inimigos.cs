@@ -9,6 +9,8 @@ public class Inimigos : MonoBehaviour
     public Transform localDoTiro;
     
     public float VelocidadeDoInimigo;
+    public int vidaMaximaDoInimigo;
+    public int vidaAtualDoInimigo;
 
     public float tenpoMaximoEntreOsTiros;
     public float tempoAtualDosTiros;
@@ -19,7 +21,7 @@ public class Inimigos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        vidaAtualDoInimigo = vidaMaximaDoInimigo;
     }
 
     // Update is called once per frame
@@ -46,6 +48,16 @@ public class Inimigos : MonoBehaviour
         {
             Instantiate(tiroDoInimigo, localDoTiro.position, Quaternion.Euler(0f, 0f, 90f));//instancia um tiro nessa posição
             tempoAtualDosTiros = tenpoMaximoEntreOsTiros;//reserta o cronometro
+        }
+    }
+
+    public void DanoInimigo(int danoParaReceber)
+    {
+        vidaAtualDoInimigo -= danoParaReceber;
+
+        if (vidaAtualDoInimigo <= 0)
+        {
+            Destroy(this.gameObject);
         }
     }
     

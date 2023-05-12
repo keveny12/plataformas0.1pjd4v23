@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 1267359982}
   m_Layer: 0
   m_Name: Inimigo Vermelho
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -701,6 +701,8 @@ MonoBehaviour:
   tiroDoInimigo: {fileID: 1485197415633484067, guid: 815c53ca4b02fd84a8c068a54ee683ad, type: 3}
   localDoTiro: {fileID: 1802458751}
   VelocidadeDoInimigo: 8
+  vidaMaximaDoInimigo: 5
+  vidaAtualDoInimigo: 0
   tenpoMaximoEntreOsTiros: 0.5
   tempoAtualDosTiros: 0
   inimigoAtirador: 1
@@ -821,7 +823,7 @@ GameObject:
   - component: {fileID: 1506093974}
   m_Layer: 0
   m_Name: Inimigo Preto
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -841,6 +843,8 @@ MonoBehaviour:
   tiroDoInimigo: {fileID: 0}
   localDoTiro: {fileID: 0}
   VelocidadeDoInimigo: 15
+  vidaMaximaDoInimigo: 1
+  vidaAtualDoInimigo: 0
   tenpoMaximoEntreOsTiros: 0
   tempoAtualDosTiros: 0
   inimigoAtirador: 0
@@ -963,7 +967,7 @@ GameObject:
   - component: {fileID: 1585608522}
   m_Layer: 0
   m_Name: Inimigo Branco
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1045,7 +1049,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7cbbbd4f47a33ba4b89e19edfadfb0a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1088,6 +1092,8 @@ MonoBehaviour:
   tiroDoInimigo: {fileID: 1404542133433159285, guid: e81313b0440db414ca03cf506bdbbddb, type: 3}
   localDoTiro: {fileID: 543900076}
   VelocidadeDoInimigo: 10
+  vidaMaximaDoInimigo: 4
+  vidaAtualDoInimigo: 0
   tenpoMaximoEntreOsTiros: 1
   tempoAtualDosTiros: 0
   inimigoAtirador: 1
@@ -1136,6 +1142,7 @@ GameObject:
   - component: {fileID: 2089178390}
   - component: {fileID: 2089178389}
   - component: {fileID: 2089178391}
+  - component: {fileID: 2089178392}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1299,6 +1306,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2089178392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089178385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6367f0fdb2a80041835659eb7b95002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaMaximaDoJogador: 10
+  vidaAtualDoJogador: 0
+  temEscudo: 0
 --- !u!1 &2101516430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,7 +1336,7 @@ GameObject:
   - component: {fileID: 2101516431}
   m_Layer: 0
   m_Name: nave mae
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1334,6 +1356,8 @@ MonoBehaviour:
   tiroDoInimigo: {fileID: 6769498661561101086, guid: 610dd9db038fbe84bb7917f029fc2f3a, type: 3}
   localDoTiro: {fileID: 1366219411}
   VelocidadeDoInimigo: 6
+  vidaMaximaDoInimigo: 10
+  vidaAtualDoInimigo: 0
   tenpoMaximoEntreOsTiros: 1
   tempoAtualDosTiros: 0
   inimigoAtirador: 1
