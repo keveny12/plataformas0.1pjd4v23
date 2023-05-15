@@ -857,6 +857,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &687476362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 687476364}
+  - component: {fileID: 687476363}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &687476363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687476362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d2e07f85ca30d4bab249c21187282a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontuacaoRecebida: 0
+  enemyControllerPrefab: {fileID: 0}
+  enemyTypes: []
+--- !u!4 &687476364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687476362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &926512625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,6 +1161,7 @@ MonoBehaviour:
   VelocidadeDoInimigo: 8
   vidaMaximaDoInimigo: 5
   vidaAtualDoInimigo: 0
+  darPontos: 200
   tenpoMaximoEntreOsTiros: 0.5
   tempoAtualDosTiros: 0
   inimigoAtirador: 1
@@ -1256,6 +1304,7 @@ MonoBehaviour:
   VelocidadeDoInimigo: 15
   vidaMaximaDoInimigo: 1
   vidaAtualDoInimigo: 0
+  darPontos: 20
   tenpoMaximoEntreOsTiros: 0
   tempoAtualDosTiros: 0
   inimigoAtirador: 0
@@ -1505,6 +1554,7 @@ MonoBehaviour:
   VelocidadeDoInimigo: 10
   vidaMaximaDoInimigo: 4
   vidaAtualDoInimigo: 0
+  darPontos: 100
   tenpoMaximoEntreOsTiros: 1
   tempoAtualDosTiros: 0
   inimigoAtirador: 1
@@ -1807,6 +1857,7 @@ MonoBehaviour:
   VelocidadeDoInimigo: 6
   vidaMaximaDoInimigo: 10
   vidaAtualDoInimigo: 0
+  darPontos: 1000000000
   tenpoMaximoEntreOsTiros: 1
   tempoAtualDosTiros: 0
   inimigoAtirador: 1

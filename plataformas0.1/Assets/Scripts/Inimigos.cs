@@ -11,6 +11,7 @@ public class Inimigos : MonoBehaviour
     public float VelocidadeDoInimigo;
     public int vidaMaximaDoInimigo;
     public int vidaAtualDoInimigo;
+    public int darPontos;
 
     public float tenpoMaximoEntreOsTiros;
     public float tempoAtualDosTiros;
@@ -57,6 +58,7 @@ public class Inimigos : MonoBehaviour
 
         if (vidaAtualDoInimigo <= 0)
         {
+            GameManager.Instance.AumentoPontos(darPontos);
             Destroy(this.gameObject);
         }
     }
