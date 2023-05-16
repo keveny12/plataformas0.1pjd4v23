@@ -7,11 +7,12 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public int pontuacaoRecebida;
-    
+    public Text textoDaPontuaçaoRecebida;
     public static GameManager Instance;
 
     [SerializeField] private GameObject enemyControllerPrefab;
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         pontuacaoRecebida = 0;
+        textoDaPontuaçaoRecebida.text = "PONTUAÇÃO: " + pontuacaoRecebida;
         //LoadScene("MainMenu");
     }
         
@@ -73,6 +75,7 @@ public class GameManager : MonoBehaviour
     public void AumentoPontos(int ganharPontos)
     {
         pontuacaoRecebida += ganharPontos;
+        textoDaPontuaçaoRecebida.text = "PONTUAÇÃO: " + pontuacaoRecebida;
     }
 
    
