@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    public int Vida = 5;
     [SerializeField] private PlayerInput _playerInput;
 
     private GameControls _controls;
@@ -39,6 +40,7 @@ public class Player : MonoBehaviour
    private void Start()
    {
        temTiroDuplo = false;
+       GameController.instance.UpdateVidas(Vida);
    }
 
    private void OnEnable()
@@ -109,5 +111,15 @@ public class Player : MonoBehaviour
             }
         }
         
+    }
+
+    public void Damage(int dmg)
+    {
+        Vida -= dmg;
+
+        if (Vida <= 0)
+        {
+           // chama o game over
+        }
     }
 }

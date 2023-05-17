@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -23,6 +24,15 @@ public class TiroDoInimigo : MonoBehaviour
     private void MovimentoTiro()
     {
         transform.Translate(Vector3.up * VelocidadeDoTiro * Time.deltaTime);//tranlate realiza um movimento no gameobject
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<VidaDoJogador>().DanoJogador(danoParaDar);
+            
+        } 
     }
 
     void OnTriggerEnter2D(Collider2D other)//diz qual objeto colidiu com o jogador
