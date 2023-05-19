@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    public int vidaMaxima = 5;
+    private int vidaDurante;
     public Text vidaText;
 
     public static GameController instance;
@@ -12,6 +14,8 @@ public class GameController : MonoBehaviour
     void Start()
     {
         instance = this;
+        vidaDurante = vidaMaxima;
+        
     }
 
     // Update is called once per frame

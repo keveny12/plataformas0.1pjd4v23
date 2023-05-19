@@ -9,7 +9,7 @@ public class VidaDoJogador : MonoBehaviour
     
     public int vidaMaximaDoJogador;
 
-    public int vidaAtualDoJogador;
+    public static int vidaAtualDoJogador;
 
     public bool temEscudo;
     // Start is called before the first frame update
@@ -36,7 +36,9 @@ public class VidaDoJogador : MonoBehaviour
             if (vidaAtualDoJogador <= 0)//sempre que o jogador morrer vai rodar esse codigo
             {
                 Debug.Log("Game Over");
+                vidaAtualDoJogador = vidaMaximaDoJogador;
             }
+           
         }
     }
 }

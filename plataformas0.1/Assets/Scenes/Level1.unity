@@ -2716,7 +2716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506093968}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 531.24, y: 207.16, z: 0}
+  m_LocalPosition: {x: 527.81, y: 193.2, z: 0}
   m_LocalScale: {x: 0.09247012, y: 0.103149615, z: 0.71714}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2900,6 +2900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1dfd3f39937c649a877d3ea82b090f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vidaMaxima: 5
   vidaText: {fileID: 1180250237}
 --- !u!4 &1549843304
 Transform:
@@ -3665,7 +3666,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barraDeVidaDoJogador: {fileID: 80892683}
   vidaMaximaDoJogador: 20
-  vidaAtualDoJogador: 0
   temEscudo: 0
 --- !u!1 &2101516430
 GameObject:
