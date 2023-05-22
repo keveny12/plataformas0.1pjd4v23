@@ -2164,7 +2164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267359977}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 530.97, y: 195.48, z: 0}
+  m_LocalPosition: {x: 619.97, y: 206.21, z: 0}
   m_LocalScale: {x: 0.26430032, y: 0.32819286, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2186,7 +2186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiroDoInimigo: {fileID: 1485197415633484067, guid: 815c53ca4b02fd84a8c068a54ee683ad, type: 3}
   localDoTiro: {fileID: 1802458751}
-  VelocidadeDoInimigo: 8
+  VelocidadeDoInimigo: 0
   vidaMaximaDoInimigo: 5
   vidaAtualDoInimigo: 0
   darPontos: 200
@@ -2628,7 +2628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiroDoInimigo: {fileID: 0}
   localDoTiro: {fileID: 0}
-  VelocidadeDoInimigo: 10
+  VelocidadeDoInimigo: 0
   vidaMaximaDoInimigo: 1
   vidaAtualDoInimigo: 0
   darPontos: 20
@@ -2716,7 +2716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506093968}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 527.81, y: 193.2, z: 0}
+  m_LocalPosition: {x: 620.23, y: 202.29, z: 0}
   m_LocalScale: {x: 0.09247012, y: 0.103149615, z: 0.71714}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2831,7 +2831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5060297576137830670, guid: 69c20c86bb04fd54f8b76195cd8c484b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.58
+      value: 5.9
       objectReference: {fileID: 0}
     - target: {fileID: 5060297576137830670, guid: 69c20c86bb04fd54f8b76195cd8c484b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3104,7 +3104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585608517}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 544.5, y: 193.17, z: 0}
+  m_LocalPosition: {x: 620.09, y: 210.08, z: 0}
   m_LocalScale: {x: 0.13882099, y: 0.17748035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3126,7 +3126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiroDoInimigo: {fileID: 1404542133433159285, guid: e81313b0440db414ca03cf506bdbbddb, type: 3}
   localDoTiro: {fileID: 543900076}
-  VelocidadeDoInimigo: 10
+  VelocidadeDoInimigo: 0
   vidaMaximaDoInimigo: 4
   vidaAtualDoInimigo: 0
   darPontos: 100

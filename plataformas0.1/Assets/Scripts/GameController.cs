@@ -15,17 +15,44 @@ public class GameController : MonoBehaviour
     {
         instance = this;
         vidaDurante = vidaMaxima;
-        
+        UpdateVidas(vidaDurante);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        vidaText.text = "x " + vidaDurante.ToString();
     }
 
     public void UpdateVidas(int value)
     {
         vidaText.text = "X " + value.ToString();
+        
+    }
+
+    public void TirarVida()
+    {
+        vidaDurante--; // tira uma vida do jogador
+
+        if (vidaDurante <= 0)
+        {
+            Morrer();
+        }
+        
+        UpdateVidas(vidaDurante);
+    }
+
+    public void AumentarVida()
+    {
+        if (vidaDurante < vidaMaxima)
+        {
+            vidaDurante++;
+            UpdateVidas(5);
+        }
+    }
+
+    public void Morrer()
+    {
+        Debug.Log("Game Over");
     }
 }

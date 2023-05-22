@@ -32,6 +32,7 @@ public class TiroDoInimigo : MonoBehaviour
         {
             other.gameObject.GetComponent<VidaDoJogador>().DanoJogador(danoParaDar);
             
+            
         } 
     }
 
