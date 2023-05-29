@@ -2188,7 +2188,7 @@ MonoBehaviour:
   tiroDoInimigo: {fileID: 1485197415633484067, guid: 815c53ca4b02fd84a8c068a54ee683ad, type: 3}
   localDoTiro: {fileID: 1802458751}
   VelocidadeDoInimigo: 0
-  vidaMaximaDoInimigo: 5
+  vidaMaximaDoInimigo: 7
   vidaAtualDoInimigo: 0
   darPontos: 200
   tenpoMaximoEntreOsTiros: 0.5
@@ -2741,7 +2741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiroDoInimigo: {fileID: 0}
   localDoTiro: {fileID: 0}
-  VelocidadeDoInimigo: 0
+  VelocidadeDoInimigo: 7
   vidaMaximaDoInimigo: 1
   vidaAtualDoInimigo: 0
   darPontos: 20

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inimigos : MonoBehaviour
 {
+    private Transform Target;//target e o jogador/ target= alvo
     public GameObject tiroDoInimigo;
 
     public Transform localDoTiro;
@@ -31,6 +32,7 @@ public class Inimigos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();//pegar o transform do objeto que tem a tag player
         vidaAtualDoInimigo = vidaMaximaDoInimigo;
         escudoDoInimigo.SetActive(true);
         temEscudo = true;
@@ -39,6 +41,7 @@ public class Inimigos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         MovimentoInimigo();
 
         if (atirarTiros1)
@@ -54,6 +57,11 @@ public class Inimigos : MonoBehaviour
         if (atirarTiros3)
         {
             AtirarTiros3();
+        }
+
+        if (inimigoAtirador == false)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, Target.position, VelocidadeDoInimigo * Time.deltaTime);
         }
 
         if (inimigoAtirador == true)//se for atirador vai atirar
