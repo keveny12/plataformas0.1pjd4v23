@@ -14,10 +14,23 @@ public class PoweUps : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))//mostrar quem colidiu com o powerup
         {
-            if (expr)
+            if (PowerUpDeEscudo == true)
+            {
+                other.gameObject.GetComponent<VidaDoJogador>().AtivarEscudo();
+            }
+
+            if (PowerUpMunicao == true)
+            {
+               // other.gameObject.GetComponent<>() = false; //toda vez que pegar municao nova vai acabar a antiga antes de enche novamente
+                
+            }
+
+            if (PowerUpSuperTiro == true)
             {
                 
             }
+            
+            Destroy(this.gameObject);
         }
     }
 }
