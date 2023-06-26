@@ -8,11 +8,13 @@ public class Inimigos : MonoBehaviour
     public GameObject tiroDoInimigo;
 
     public Transform localDoTiro;
+    public GameObject itenParaDropar;
     
     public float VelocidadeDoInimigo;
     public int vidaMaximaDoInimigo;
     public int vidaAtualDoInimigo;
     public int darPontos;
+    public int chanceParaDropar;//para poder alterar na aba inspector
 
     public float tenpoMaximoEntreOsTiros;
     public float tempoAtualDosTiros;
@@ -26,8 +28,8 @@ public class Inimigos : MonoBehaviour
     public int vidaMaximaDoEscudo;
     public int vidaAtualDoEscudo;
 
-    
-    
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -125,6 +127,11 @@ public class Inimigos : MonoBehaviour
             if (vidaAtualDoInimigo <= 0)
             {
                 GameManager.Instance.AumentoPontos(darPontos);
+                int numeroAleatorio = Random.Range(0, 100); //cria variavel que sortea um numero aleatorio para dropar o power up
+                if (numeroAleatorio <= chanceParaDropar) //porcentagem da chance de dropar power up
+                {
+                    Instantiate(itenParaDropar, transform.position, Quaternion.Euler(0f, 0f, 0f));
+                }
                 Destroy(this.gameObject);
             }
         }

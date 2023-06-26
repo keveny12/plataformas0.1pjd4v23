@@ -2187,10 +2187,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiroDoInimigo: {fileID: 1485197415633484067, guid: 815c53ca4b02fd84a8c068a54ee683ad, type: 3}
   localDoTiro: {fileID: 1802458751}
+  itenParaDropar: {fileID: 621018957443454270, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
   VelocidadeDoInimigo: 0
   vidaMaximaDoInimigo: 7
   vidaAtualDoInimigo: 0
   darPontos: 200
+  chanceParaDropar: 10
   tenpoMaximoEntreOsTiros: 0.5
   tempoAtualDosTiros: 0
   inimigoAtirador: 1
@@ -2741,10 +2743,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiroDoInimigo: {fileID: 0}
   localDoTiro: {fileID: 0}
+  itenParaDropar: {fileID: 5354726033657778064, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
   VelocidadeDoInimigo: 7
   vidaMaximaDoInimigo: 1
   vidaAtualDoInimigo: 0
   darPontos: 20
+  chanceParaDropar: 20
   tenpoMaximoEntreOsTiros: 0
   tempoAtualDosTiros: 0
   inimigoAtirador: 0
@@ -3247,10 +3251,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiroDoInimigo: {fileID: 1404542133433159285, guid: e81313b0440db414ca03cf506bdbbddb, type: 3}
   localDoTiro: {fileID: 543900076}
+  itenParaDropar: {fileID: 992120104480471932, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
   VelocidadeDoInimigo: 0
   vidaMaximaDoInimigo: 4
   vidaAtualDoInimigo: 0
   darPontos: 100
+  chanceParaDropar: 15
   tenpoMaximoEntreOsTiros: 1
   tempoAtualDosTiros: 0
   inimigoAtirador: 1
@@ -4043,10 +4049,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiroDoInimigo: {fileID: 6769498661561101086, guid: 610dd9db038fbe84bb7917f029fc2f3a, type: 3}
   localDoTiro: {fileID: 1366219411}
+  itenParaDropar: {fileID: 0}
   VelocidadeDoInimigo: 6
   vidaMaximaDoInimigo: 10
   vidaAtualDoInimigo: 0
   darPontos: 1000000000
+  chanceParaDropar: 0
   tenpoMaximoEntreOsTiros: 1
   tempoAtualDosTiros: 0
   inimigoAtirador: 1
@@ -4162,120 +4170,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!1001 &621018959128777909
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 621018957443454267, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 621018957443454267, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 527.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 621018957443454267, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 204.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 621018957443454267, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 621018957443454267, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 621018957443454267, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 621018957443454267, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 621018957443454267, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 621018957443454267, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 621018957443454267, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 621018957443454267, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 621018957443454270, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
-      propertyPath: m_Name
-      value: Power-Up de Laser (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a92a68c0059902f469ce9c328e6c335e, type: 3}
---- !u!1001 &992120105066526249
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 992120104480471921, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 992120104480471921, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 527.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 992120104480471921, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 205.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 992120104480471921, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 992120104480471921, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 992120104480471921, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 992120104480471921, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 992120104480471921, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 992120104480471921, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 992120104480471921, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 992120104480471921, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 992120104480471932, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
-      propertyPath: m_Name
-      value: Power-Up de Laser
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 44cd7838c87d0bd4383438a3b8f5bfd2, type: 3}
 --- !u!1001 &5060297575145087471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4337,60 +4231,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69c20c86bb04fd54f8b76195cd8c484b, type: 3}
---- !u!1001 &5354726035218643047
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5354726033657778064, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_Name
-      value: Power-Up de Escudo
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354726033657778077, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354726033657778077, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 527.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354726033657778077, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 206.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354726033657778077, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354726033657778077, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354726033657778077, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354726033657778077, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354726033657778077, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354726033657778077, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354726033657778077, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354726033657778077, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d59b9928db4cc024b896e18518b0b7d1, type: 3}
