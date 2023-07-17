@@ -95,16 +95,16 @@ public class Player : MonoBehaviour
         MovimentoJogador();
         DispararTiro();
 
-        if (Input.GetKeyDown(KeyCode.X))//troca o tiro quando apertar o x
+        if (Input.GetKeyDown(KeyCode.Z))//troca o tiro quando apertar o z
         {
-            tiros[listaDeTirosAtual].SetActive(false);//desativa o tiro atual
+            
             listaDeTirosAtual++;//altera na lista para alterar para o proximo tiro
 
             if (listaDeTirosAtual >= tiros.Length)//quando acabar o array volta para o primeiro tiro
             {
                 listaDeTirosAtual = 0;
             }
-            tiros[listaDeTirosAtual].SetActive(true);//ativa o tiro da vez
+            
 
 
         }
@@ -129,7 +129,8 @@ public class Player : MonoBehaviour
             ProximoTiro = Time.time + tempoDoTiro;
             if (temTiroDuplo == false)
             {
-                Instantiate(tiroNormal, localDoTiroNormal.position, localDoTiroNormal.rotation);
+                if(tiroNormal != null)//verificar
+                    Instantiate(tiros[listaDeTirosAtual], localDoTiroNormal.position, localDoTiroNormal.rotation);
             }
         }
         
