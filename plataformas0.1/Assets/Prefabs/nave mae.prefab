@@ -140,7 +140,7 @@ MonoBehaviour:
   tiroDoInimigo: {fileID: 6769498661561101086, guid: 610dd9db038fbe84bb7917f029fc2f3a, type: 3}
   localDoTiro: {fileID: 6995192349194059251}
   itenParaDropar: {fileID: 0}
-  VelocidadeDoInimigo: 6
+  VelocidadeDoInimigo: 0
   vidaMaximaDoInimigo: 10
   vidaAtualDoInimigo: 0
   darPontos: 1000000000
