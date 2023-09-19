@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inimigos : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Inimigos : MonoBehaviour
     public GameObject itenParaDropar;
     
     public float VelocidadeDoInimigo;
+    
     public int vidaMaximaDoInimigo;
     public int vidaAtualDoInimigo;
     public int darPontos;
@@ -27,6 +29,7 @@ public class Inimigos : MonoBehaviour
     public GameObject escudoDoInimigo;//servira de referencia ao game object do escudo
     public int vidaMaximaDoEscudo;
     public int vidaAtualDoEscudo;
+    
 
 
 
@@ -38,6 +41,8 @@ public class Inimigos : MonoBehaviour
         vidaAtualDoInimigo = vidaMaximaDoInimigo;
         escudoDoInimigo.SetActive(true);
         temEscudo = true;
+        //valor maximo do slider sera igual o valor maximo da vida do jogador
+        
     }
 
     // Update is called once per frame
@@ -45,6 +50,7 @@ public class Inimigos : MonoBehaviour
     {
         
         MovimentoInimigo();
+        
 
         if (atirarTiros1)
         {
@@ -70,6 +76,7 @@ public class Inimigos : MonoBehaviour
         {
             
         }
+        
     }
     public void AtivarEscudo() //vai ativar o escudo quando a caixinha estiver marcada
     {
@@ -123,6 +130,8 @@ public class Inimigos : MonoBehaviour
         if (temEscudo == false)
         {
             vidaAtualDoInimigo -= danoParaReceber;
+            
+            
 
             if (vidaAtualDoInimigo <= 0)
             {

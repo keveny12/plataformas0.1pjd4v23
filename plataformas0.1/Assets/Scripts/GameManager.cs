@@ -21,27 +21,48 @@ public class GameManager : MonoBehaviour
     
     private void Awake()
     {
-        Instance = this;
-        // if (Instance == null)
-        //{
-        //   Instance = this;
-        //   DontDestroyOnLoad(transform);
-        // }
-        // else
-        //    Destroy(gameObject);
+        
+         if (Instance == null)
+        {
+           Instance = this;
+           DontDestroyOnLoad(transform);
+        }
+         else
+         {
+             Destroy(gameObject);
+         }
     }
 
     private void Start()
     {
-        pontuacaoRecebida = 0;
-        textoDaPontuaçaoRecebida.text = "PONTUAÇÃO: " + pontuacaoRecebida;
-        //LoadScene("MainMenu");
+        LoadScene("MainMenu");
+        //pontuacaoRecebida = 0;
+        //textoDaPontuaçaoRecebida.text = "PONTUAÇÃO: " + pontuacaoRecebida;
+        
+        
     }
+
+    public void LoadLevel()
+    {
+
+        SceneManager.LoadScene("GUI");
+        SceneManager.LoadScene("Level1", LoadSceneMode.Additive);
+    }
+
+   // public void Startgame()
+    //{
+    //    SceneManager.LoadScene(guiScene);
+   // }
         
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
+
+   // private void StartGameFromLevel()
+   // {
+     //   SceneManager.LoadScene(, LoadSceneMode.Additive);
+   // }
     private void Update()
     {
     //    if (Keyboard.current.digit1Key.wasPressedThisFrame)
