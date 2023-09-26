@@ -3,7 +3,11 @@ guid: a1d2e07f85ca30d4bab249c21187282a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - player: {fileID: 127721197545630347, guid: fe9b1a3d3ded91c43ae5e4582bdde98b, type: 3}
+  - localDoSpawn: {instanceID: 0}
+  - "textoDaPontua\xE7aoRecebida": {instanceID: 0}
+  - enemyControllerPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

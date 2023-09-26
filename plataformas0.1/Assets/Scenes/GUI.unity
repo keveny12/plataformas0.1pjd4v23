@@ -209,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 80892682}
   - component: {fileID: 80892683}
+  - component: {fileID: 80892684}
   m_Layer: 5
   m_Name: Barra de Vida do Jogador
   m_TagString: Untagged
@@ -289,6 +290,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &80892684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80892681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9d0008ec69cc547b94202607794408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &93545159
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +644,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 515315340}
+  - component: {fileID: 515315341}
   m_Layer: 5
   m_Name: Vida
   m_TagString: Untagged
@@ -660,6 +674,18 @@ RectTransform:
   m_AnchoredPosition: {x: -0.33654785, y: 0}
   m_SizeDelta: {x: 1920.7, y: 1080}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &515315341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515315339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8f1f967875f124387dbe7234da80d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &601940491
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1270556779}
   - component: {fileID: 1270556780}
+  - component: {fileID: 1270556781}
   m_Layer: 5
   m_Name: Barra de vida do inimigo
   m_TagString: Untagged
@@ -951,6 +978,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1270556781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270556778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad8cd61656d52d4e9d58491af738830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1310107262
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +1002,7 @@ GameObject:
   - component: {fileID: 1310107265}
   - component: {fileID: 1310107263}
   - component: {fileID: 1310107264}
+  - component: {fileID: 1310107267}
   m_Layer: 5
   m_Name: "Texto de Pontua\xE7ao Atual"
   m_TagString: Untagged
@@ -1047,6 +1087,18 @@ RectTransform:
   m_AnchoredPosition: {x: -11, y: -20}
   m_SizeDelta: {x: 800.211, y: 86.806}
   m_Pivot: {x: 1, y: 1}
+--- !u!114 &1310107267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310107262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8a3d8cbfdd2fd4b90fcd8ef0643ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1592034968
 GameObject:
   m_ObjectHideFlags: 0

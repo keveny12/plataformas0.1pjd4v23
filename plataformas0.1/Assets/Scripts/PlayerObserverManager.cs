@@ -1,18 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerObserverManager : MonoBehaviour
+public static class PlayerObserverManager
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   // public static Action<int> OnBarraDeVidaPlayer;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   // public static void BarraChanged(int Barra)
+   // {
+   //     OnBarraDeVidaPlayer?.Invoke(Barra);
+   // }
+    //public static Action<int> OnPontuacaoAtual;
+
+   // public static void PontosChanged(int Pontos)
+  //  {
+   //     OnPontuacaoAtual?.Invoke(Pontos);
+    //}
+    
+   // public static Action<int> OnVida;
+
+    //public static void VidaChanged(int Vida)
+    //{
+   //     OnVida?.Invoke(Vida);
+    //}
+    
+   // public static Action<int> OnBarraDeVidaBoss;
+
+    //public static void BarrabossChanged(int Barraboss)
+   // {
+   //     OnBarraDeVidaBoss?.Invoke(Barraboss);
+   // }
+
 }

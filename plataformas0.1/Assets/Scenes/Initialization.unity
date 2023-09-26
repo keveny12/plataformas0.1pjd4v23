@@ -152,9 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1d2e07f85ca30d4bab249c21187282a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 127721197545630347, guid: fe9b1a3d3ded91c43ae5e4582bdde98b, type: 3}
+  spawn: {fileID: 0}
   pontuacaoRecebida: 0
   "textoDaPontua\xE7aoRecebida": {fileID: 0}
-  enemyControllerPrefab: {fileID: 1402985835426575697, guid: 3532483ac1541a14a8649e977fa2f0a0, type: 3}
   enemyTypes:
   - {fileID: 11400000, guid: c91322a7087ad9949ad5c4fff093285b, type: 2}
   - {fileID: 11400000, guid: e56651892b317c84c845b55fa7027558, type: 2}

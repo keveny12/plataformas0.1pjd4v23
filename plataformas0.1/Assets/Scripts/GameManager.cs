@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
 using JetBrains.Annotations;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,11 +12,15 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject player;
+
+    public GameObject spawn;
+    
     public int pontuacaoRecebida;
     public Text textoDaPontuaçaoRecebida;
     public static GameManager Instance;
 
-    [SerializeField] private GameObject enemyControllerPrefab;
+    //[SerializeField] private GameObject enemyControllerPrefab;
 
     [SerializeField] private List<EnemySO> enemyTypes;
     
@@ -46,7 +51,12 @@ public class GameManager : MonoBehaviour
     {
 
         SceneManager.LoadScene("GUI");
-        SceneManager.LoadScene("Level1", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive).completed += operation =>
+        {
+            spawn = GameObject.FindWithTag("spawnp");
+            Vector2 posicao = this.spawn.transform.position;
+            Instantiate(player,posicao,quaternion.identity);
+        } ;
     }
 
    // public void Startgame()
@@ -85,12 +95,12 @@ public class GameManager : MonoBehaviour
 
     public void SpawnEnemy(int enemyType)
     {
-        GameObject enemy = Instantiate(enemyControllerPrefab);
+        //GameObject enemy = Instantiate(enemyControllerPrefab);
         
-        int hp = enemyTypes[enemyType].hp;
-        Sprite sprite = enemyTypes[enemyType].sprite;
+       // int hp = enemyTypes[enemyType].hp;
+       // Sprite sprite = enemyTypes[enemyType].sprite;
         
-        enemy.GetComponent<EnemyController>().initialize(hp, sprite);
+        //enemy.GetComponent<EnemyController>().initialize(hp, sprite);
     }
 
     public void AumentoPontos(int ganharPontos)

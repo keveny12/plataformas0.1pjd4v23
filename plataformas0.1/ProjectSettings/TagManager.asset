@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Inimigo
   - Boss
+  - spawn
+  - spawnp
   layers:
   - Default
   - TransparentFX
