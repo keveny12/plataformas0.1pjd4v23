@@ -7,7 +7,8 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    public int Vida = 5;
+    private int VidaAtual = 100;
+    private int vidaMaxima = 100;
     [SerializeField] private PlayerInput _playerInput;
 
     private GameControls _controls;
@@ -41,8 +42,10 @@ public class Player : MonoBehaviour
 
    private void Start()
    {
+       VidaAtual = 100;
+       vidaMaxima = 100;
        temTiroDuplo = false;
-       GameController.instance.UpdateVidas(Vida);
+       GameController.instance.UpdateVidas(VidaAtual);
    }
 
    private void OnEnable()
@@ -85,7 +88,7 @@ public class Player : MonoBehaviour
 
     private void Addpoints(int amount)
     {
-       
+        
 
 
     }
@@ -138,9 +141,10 @@ public class Player : MonoBehaviour
 
     public void Damage(int dmg)
     {
-        Vida -= dmg;
-
-        if (Vida <= 0)
+        VidaAtual -= dmg;
+        PlayerObserverManager.BarraChanged(VidaAtual);
+        
+        if (VidaAtual <= 0)
         {
            // chama o game over
         }

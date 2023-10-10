@@ -106,7 +106,8 @@ public class GameManager : MonoBehaviour
     public void AumentoPontos(int ganharPontos)
     {
         pontuacaoRecebida += ganharPontos;
-        textoDaPontuaçaoRecebida.text = "PONTUAÇÃO: " + pontuacaoRecebida;
+        //textoDaPontuaçaoRecebida.text = "PONTUAÇÃO: " + pontuacaoRecebida;
+        PlayerObserverManager.PontosChanged(pontuacaoRecebida);
     }
 
    

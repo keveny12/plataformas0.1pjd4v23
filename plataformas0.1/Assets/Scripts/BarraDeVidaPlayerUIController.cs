@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BarraDeVidaPlayerUIController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Slider barraSlider;
+    private void OnEnable()
     {
-        
+        PlayerObserverManager.OnBarraDeVidaPlayer += UpdateBarra;
+    }
+    private void OnDisable()
+    {
+        PlayerObserverManager.OnBarraDeVidaPlayer -= UpdateBarra;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        barraSlider = GetComponent<Slider>();
+    
+    }
+
+    private void UpdateBarra(float value)
+    {
+        barraSlider.value = value;
     }
 }

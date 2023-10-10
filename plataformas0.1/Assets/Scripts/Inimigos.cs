@@ -39,7 +39,7 @@ public class Inimigos : MonoBehaviour
     {
         Target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();//pegar o transform do objeto que tem a tag player
         vidaAtualDoInimigo = vidaMaximaDoInimigo;
-        escudoDoInimigo.SetActive(true);
+//        escudoDoInimigo.SetActive(true);
         temEscudo = true;
         //valor maximo do slider sera igual o valor maximo da vida do jogador
         

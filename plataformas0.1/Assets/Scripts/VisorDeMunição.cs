@@ -16,14 +16,14 @@ public class VisorDeMunição : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        visorDeMunição.text = munição.ToString();
-        if (Input.GetMouseButtonDown(0) && !estaAtirando && munição > 0)
-        {
-            estaAtirando = true;
-            munição--;
-            estaAtirando = false;
-        }
-    }
+    //void Update()
+    //{
+     //   visorDeMunição.text = munição.ToString();
+       // if (Input.GetMouseButtonDown(0) && !estaAtirando && munição > 0)
+        //{
+        //    estaAtirando = true;
+         //   munição--;
+          //  estaAtirando = false;
+       // }
+   // }
 }

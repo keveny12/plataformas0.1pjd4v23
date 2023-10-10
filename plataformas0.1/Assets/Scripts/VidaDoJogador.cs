@@ -19,8 +19,8 @@ public class VidaDoJogador : MonoBehaviour
     void Start()
     {
         vidaAtualDoJogador = vidaMaximaDoJogador;//sempre que o jogo iniciar a vida atual sera igual a vida maxima
-        barraDeVidaDoJogador.maxValue = vidaMaximaDoJogador;// quando o jogo inicia o valor maximo da barra vai ser igual ao valor maximo da vida do jogador
-        barraDeVidaDoJogador.value = vidaAtualDoJogador;//sempre que levar dano atualisa a barra com a vida atual do jogador
+       // barraDeVidaDoJogador.maxValue = vidaMaximaDoJogador;// quando o jogo inicia o valor maximo da barra vai ser igual ao valor maximo da vida do jogador
+        //barraDeVidaDoJogador.value = vidaAtualDoJogador;//sempre que levar dano atualisa a barra com a vida atual do jogador
         
         escudoDoJogador.SetActive(false);//sempre que começa o jogo o escudo vai ta desativado, pois é um power up
         temEscudo = false;
@@ -45,15 +45,16 @@ public class VidaDoJogador : MonoBehaviour
         if (temEscudo == false)
         {
             vidaAtualDoJogador -= danoParaReceber;
-            barraDeVidaDoJogador.value = vidaAtualDoJogador;
+            //barraDeVidaDoJogador.value = vidaAtualDoJogador;
 
             if (vidaAtualDoJogador <= 0)//sempre que o jogador morrer vai rodar esse codigo
             {
                 Debug.Log("perdeu hp");
                 vidaAtualDoJogador = vidaMaximaDoJogador;
-                barraDeVidaDoJogador.value = vidaAtualDoJogador;
+                //barraDeVidaDoJogador.value = vidaAtualDoJogador;
                 GameController.instance.TirarVida();
             }
+            PlayerObserverManager.BarraChanged(vidaAtualDoJogador);
 
         }
         else

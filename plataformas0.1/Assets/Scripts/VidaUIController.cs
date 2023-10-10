@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VidaUIController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Text vidaText;
+    private void OnEnable()
     {
-        
+        PlayerObserverManager.OnVida += UpdateVidas;
+    }
+    private void OnDisable()
+    {
+        PlayerObserverManager.OnVida -= UpdateVidas;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        vidaText = GetComponent<Text>();
+    
+    }
+
+    private void UpdateVidas(int value)
+    {
+        vidaText.text = value.ToString();
     }
 }

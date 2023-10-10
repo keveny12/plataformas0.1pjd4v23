@@ -22,12 +22,12 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        vidaText.text = "x " + vidaDurante.ToString();
+//        vidaText.text = "x " + vidaDurante.ToString();
     }
 
     public void UpdateVidas(int value)
     {
-        vidaText.text = "X " + value.ToString();
+//        vidaText.text = "X " + value.ToString();
         
     }
 
@@ -41,6 +41,7 @@ public class GameController : MonoBehaviour
         }
         
         UpdateVidas(vidaDurante);
+        PlayerObserverManager.VidaChanged(vidaDurante);
     }
 
     public void AumentarVida()
